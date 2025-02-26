@@ -1,3 +1,5 @@
+import { destinations } from "@/utils/roadmap";
+
 export const Roadmap = () => {
   return (
     <div className="relative">
@@ -9,7 +11,7 @@ export const Roadmap = () => {
         </h2>
       </div>
       <div>
-        <button></button>
+        <button>{destinations.map({})}</button>
       </div>
     </div>
   );
