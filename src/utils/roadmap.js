@@ -2,13 +2,26 @@ export const destinations = [
   {
     name: "Sukhbaatar square",
     location: "Ulaanbator",
-    locationIcon: "<img src=/locationIcon.svg/>",
     day: "day 1",
   },
   {
     name: "Amarbaysgalant monastery",
     location: "Bulgan",
-    locationIcon: "<img src=/locationIcon.svg/>",
     day: "day 2",
+  },
+  {
+    name: "Khorgiin togoo",
+    location: "Arkhangai",
+    day: "day 3",
+  },
+  {
+    name: "Terkhiin tsagaan lake",
+    location: "Arkhangai",
+    day: "day 4",
+  },
+  {
+    name: "Khuvsgul lake",
+    location: "Khuvsgul",
+    day: "day 5",
   },
 ];

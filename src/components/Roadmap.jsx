@@ -11,7 +11,33 @@ export const Roadmap = () => {
         </h2>
       </div>
       <div>
-        <button>{destinations.map({})}</button>
+        <div className="flex flex-col items-center gap-4 absolute">
+          {destinations.map((destination, index) => {
+            const { name, location, day } = destination;
+
+            return (
+              <button
+                key={index}
+                className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 w-[50%]"
+              >
+                <div className="flex justify-between gap-[10px]">
+                  <div>
+                    <p>{name}</p>
+                    <div>
+                      <img
+                        className="h-[14px]"
+                        src="/locationIcon.svg"
+                        alt=""
+                      />
+                      <p>{location}</p>
+                    </div>
+                  </div>
+                  <p>{day}</p>
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
