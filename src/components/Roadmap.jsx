@@ -23,7 +23,7 @@ export const Roadmap = () => {
             ];
 
             return (
-              <div className="w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%]">
+              <div className="w-full sm:w-[60%] md:w-[50%] lg:w-[60%] xl:w-[50%]">
                 <button
                   key={id}
                   className={`px-4 py-2 ${buttonColors[index]} text-white rounded-[120px] hover:bg-opacity-90 w-full h-[70px] opacity-[0.8]`}
