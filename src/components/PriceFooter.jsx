@@ -10,7 +10,7 @@ export const PriceFooter = () => {
           Choose a package that's right for you
         </p>
       </div>
-      <div className="flex absolute top-[250px] gap-[20px] left-[40px] right-[40px]">
+      <div className="flex absolute top-[200px] gap-[20px] left-[40px] right-[40px]">
         {packages.map((packages, index) => {
           const {
             packageType,
