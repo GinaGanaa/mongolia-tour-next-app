@@ -2,7 +2,7 @@ import { destinations } from "@/utils/roadmap";
 
 export const Roadmap = () => {
   return (
-    <div className="relative">
+    <div className="relative min-w-[1000px]">
       <img className="w-full" src="./RoadmapImage.png" alt="" />
       <div className="absolute top-1 pt-[70px] left-1/3 flex flex-col items-center">
         <h1 className="text-[42px] font-bold">Destination of Our Agency</h1>
@@ -23,21 +23,23 @@ export const Roadmap = () => {
             ];
 
             return (
-              <div className="w-full sm:w-[60%] md:w-[50%] lg:w-[60%] xl:w-[50%]">
+              <div className="w-full sm:w-[50%] md:w-[40%] lg:w-[40%] xl:w-[50%]">
                 <button
                   key={id}
-                  className={`px-4 py-2 ${buttonColors[index]} text-white rounded-[120px] hover:bg-opacity-90 w-full h-[70px] opacity-[0.8]`}
+                  className={`px-4 py-2 ${buttonColors[index]} text-white rounded-[120px] pl-[30px] hover:bg-opacity-90 border-[3px] border-transparent hover:border-white w-full h-[80px] opacity-[0.8]`}
                 >
                   <div className="flex justify-between gap-[10px]">
                     <div>
-                      <p className="text-[20px]">{name}</p>
+                      <p className="text-[20px] text-black font-semibold">
+                        {name}
+                      </p>
                       <div className="flex gap-[10px]">
                         <img
                           className="h-[14px]"
                           src="/locationIcon.svg"
                           alt=""
                         />
-                        <p className="text-[12px]">{location}</p>
+                        <p className="text-[12px] text-black">{location}</p>
                       </div>
                     </div>
 
