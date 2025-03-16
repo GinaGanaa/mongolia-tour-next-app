@@ -10,7 +10,7 @@ export const Roadmap = () => {
           Pack Your Bags And Get Ready
         </h2>
       </div>
-      <div>
+      <div className="flex">
         <div className="flex flex-col items-start gap-4 absolute top-[200px] left-[10%] right-[10%] w-full">
           {destinations.map((destination, index) => {
             const { name, location, day, id, label } = destination;
@@ -44,7 +44,7 @@ export const Roadmap = () => {
                     </div>
 
                     <div className="bg-white text-black rounded-full w-[48px] h-[48px] flex items-center justify-center">
-                      <p className="text-[14px]">{day}</p>
+                      <p className="text-[14px] font-semibold">{day}</p>
                     </div>
                   </div>
                 </button>

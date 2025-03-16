@@ -15,7 +15,6 @@ export const Location = () => {
     <div className="relative">
       <img className="w-full" src="./LocationImage.png" alt="Location" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-[20px] justify-between w-[90%]">
-        {/* First Card */}
         <div
           className={`relative min-w-[230px] w-[15vw] h-auto transition-all duration-300 transform cursor-pointer ${
             activeCard === 1 ? "scale-105 shadow-lg" : "scale-100"
@@ -28,7 +27,6 @@ export const Location = () => {
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full">
-            {/* Title */}
             <p
               className={`text-xl font-bold text-white text-center transition-all duration-500 ease-in-out ${
                 activeCard === 1 ? "-translate-y-8" : "translate-y-0"
@@ -36,7 +34,7 @@ export const Location = () => {
             >
               {"TERKHIIN TSAGAAN LAKE"}
             </p>
-            {/* Description */}
+
             <p
               className={`text-sm mt-2 text-white transition-opacity duration-500 ease-in-out pl-[20px] ${
                 activeCard === 1 ? "opacity-100" : "opacity-0"
@@ -61,7 +59,6 @@ export const Location = () => {
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full">
-            {/* Title */}
             <p
               className={`text-xl font-bold text-white text-center transition-all duration-500 ease-in-out ${
                 activeCard === 2 ? "-translate-y-8" : "translate-y-0"
@@ -69,7 +66,7 @@ export const Location = () => {
             >
               {"AMARBAYASGALANT MONASTERY"}
             </p>
-            {/* Description */}
+
             <p
               className={`text-sm mt-2 text-white transition-opacity duration-500 ease-in-out pl-[20px] ${
                 activeCard === 2 ? "opacity-100" : "opacity-0"
@@ -80,8 +77,6 @@ export const Location = () => {
             </p>
           </div>
         </div>
-
-        {/* Third Card */}
         <div
           className={`relative min-w-[230px] w-[15vw] h-auto transition-all duration-300 transform cursor-pointer ${
             activeCard === 3 ? "scale-105 shadow-lg" : "scale-100"
@@ -94,7 +89,6 @@ export const Location = () => {
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full">
-            {/* Title */}
             <p
               className={`text-xl font-bold text-white text-center transition-all duration-500 ease-in-out ${
                 activeCard === 3 ? "-translate-y-8" : "translate-y-0"
@@ -102,7 +96,7 @@ export const Location = () => {
             >
               {"KHUVSGUL LAKE"}
             </p>
-            {/* Description */}
+
             <p
               className={`text-sm mt-2 text-white transition-opacity duration-500 ease-in-out pl-[20px] ${
                 activeCard === 3 ? "opacity-100" : "opacity-0"
@@ -114,7 +108,6 @@ export const Location = () => {
           </div>
         </div>
 
-        {/* Fourth Card */}
         <div
           className={`relative min-w-[230px] w-[15vw] h-auto transition-all duration-300 transform cursor-pointer ${
             activeCard === 4 ? "scale-105 shadow-lg" : "scale-100"
@@ -127,7 +120,6 @@ export const Location = () => {
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full">
-            {/* Title */}
             <p
               className={`text-xl font-bold text-white text-center transition-all duration-500 ease-in-out ${
                 activeCard === 4 ? "-translate-y-8" : "translate-y-0"
@@ -135,7 +127,7 @@ export const Location = () => {
             >
               {"KHORGIIN TOGOO"}
             </p>
-            {/* Description */}
+
             <p
               className={`text-sm mt-2 text-white transition-opacity duration-500 ease-in-out pl-[20px] ${
                 activeCard === 4 ? "opacity-100" : "opacity-0"
