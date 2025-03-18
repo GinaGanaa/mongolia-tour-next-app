@@ -30,7 +30,7 @@ export const PriceFooter = () => {
           return (
             <div
               key={index}
-              className="bg-white rounded-[30px] h-[435px] flex flex-col p-[20px]"
+              className="bg-white rounded-[30px] h-[435px] flex flex-col p-[20px] hover:bg-slate-500"
             >
               <div className="flex flex-col flex-grow">
                 <div className="flex items-center gap-[20px]">
