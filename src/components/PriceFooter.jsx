@@ -3,7 +3,6 @@ import { packages } from "@/utils/packageChoices";
 export const PriceFooter = () => {
   return (
     <div className="relative min-w-[1000px]">
-      {/* Header Section */}
       <img className="w-full" src="./Price&Footer image.png" alt="Pricing" />
       <div className="absolute top-[50px] flex flex-col items-center w-full">
         <p className="text-[42px] font-semibold">Pricing of Our Agency</p>
@@ -12,7 +11,6 @@ export const PriceFooter = () => {
         </p>
       </div>
 
-      {/* Cards Section */}
       <div className="flex absolute top-[200px] gap-[20px] left-[40px] right-[40px] justify-center">
         {packages.map((plan, index) => {
           const {
@@ -30,12 +28,16 @@ export const PriceFooter = () => {
           return (
             <div
               key={index}
-              className="bg-white rounded-[30px] h-[435px] flex flex-col p-[20px] hover:bg-slate-500"
+              className="bg-white rounded-[30px] h-[435px] flex flex-col p-[20px] hover:bg-white group"
             >
               <div className="flex flex-col flex-grow">
                 <div className="flex items-center gap-[20px]">
                   <button>
-                    <img className="w-[36px]" src="./heartIcon.png" alt="" />
+                    <img
+                      className="w-[36px]  hover:brightness-95 "
+                      src="./heartIcon.png"
+                      alt=""
+                    />
                   </button>
                   <p className="text-[18px]">{packageType}</p>
                 </div>
@@ -68,8 +70,7 @@ export const PriceFooter = () => {
                 </div>
               </div>
 
-              {/* Button at the bottom of the card */}
-              <button className="mt-auto bg-[#A4D1E2] w-[90%] rounded-[30px] h-[40px] text-[16px] font-semibold">
+              <button className="mt-auto group transition-all duration-500 ease-in-out bg-[#A4D1E2] w-[90%] rounded-[30px] h-[40px] text-[16px] font-semibold group-hover:bg-black group-hover:text-white">
                 Select package
               </button>
             </div>
@@ -77,7 +78,6 @@ export const PriceFooter = () => {
         })}
       </div>
 
-      {/* Footer Buttons */}
       <div className="flex gap-[30px] absolute bottom-5 left-10">
         <button className="flex items-center bg-white w-[167px] justify-center gap-[15px] rounded-[30px] font-extrabold text-[#6972B5]">
           <img className="w-[20px]" src="./FacebookIcon.png" alt="Facebook" />
